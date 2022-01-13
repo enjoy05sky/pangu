@@ -5,15 +5,15 @@ export declare type MicroAppList = Array<RegistrableApp<ObjectType>>;
 const microList: MicroAppList = [
   {
     name: "vue3 app", // app name registered
-    entry: "//localhost:8080",
+    entry: "//localhost:9080",
     container: "#subAppContainer",
     activeRule: "/#/vue3",
   },
   {
-    name: "vue app",
-    entry: { scripts: ["//localhost:7100/main.js"] },
+    name: "jquery app",
+    entry: "//localhost:9081",
     container: "#subAppContainer",
-    activeRule: "/yourActiveRule2",
+    activeRule: "/#/jquery",
   },
 ];
 
