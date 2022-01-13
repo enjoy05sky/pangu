@@ -12,7 +12,6 @@
         "
         >{{ app.name }}</router-link
       >
-     
     </template>
   </div>
   <div class="router-container">
@@ -46,7 +45,7 @@ export default defineComponent({
     });
 
     const sendMessage = function () {
-      emitter.emit("vue3", { data: "message by frame" });
+      emitter.emit("vue3", { data: "message by frame"});
     };
     // 获取子组件app列表
     fetchMicroAppList().then((microList) => {
